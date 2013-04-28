@@ -1,0 +1,14 @@
+{
+    "name": "mydex/hackathoncentral",
+    "description": "A simple app to show how to respond to callbacks with mydex",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Adams",
+            "email": "wave@chrisadams.me.uk"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.*"
+    }
+}
