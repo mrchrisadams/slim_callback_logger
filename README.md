@@ -1,7 +1,19 @@
-slim_callback_logger
+Slim Callback Logger
 ====================
 
-An example of a Slim php app, designed to be deployable to heroku, using composer for managing dependencies
+An example of a Slim php app, designed to be deployable to heroku, using composer for managing dependencies.
+
+The aim here is to make working with PHP, from local development to deployment, feel as close to working in a Sinatra-like, 'lots of small apps speaking to each other' as is possible.
+
+#### Why do this using Slim?
+
+Slim seems reasonably close to Sinatra, hence my choosing it for this. I know there are other examples around - hopefully this could act as a nice enough starting point to pick up elsewhere..
+
+#### What's this callback logging malarkey?
+
+I'm trying to put together a simple way to log callbacks sent to a given endpoint as part of a larger project.
+
+There's nothing really significant beyond that.
 
 ## Usage
 
