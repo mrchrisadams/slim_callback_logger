@@ -1,23 +1,12 @@
 <?php
+
 require 'vendor/autoload.php';
 
 $app = new \Slim\Slim();
 
-// Define a HTTP GET route:
-$app->get('/', function() use($app) {
-
-    // echo var_dump($app);
-
-});
-
-$app->get('/hello/:name', function ($name) {
-
-  echo "Hello, $name";
-
-});
-
 // Define a HTTP POST route:
 $app->post('/callback', function() use($app) {
+
   $req = $app->request();
   $req->post();
   $log = $app->getLog();
@@ -34,17 +23,9 @@ $app->post('/callback', function() use($app) {
 
   $log->info($my_string);
 
-  // $out = fopen('logger.txt', 'a');
-  // $stdoutLogWriter = new \Slim\LogWriter($out);
-  // $stdout_log = new \Slim\Log($stdoutLogWriter);
-  // $stdout_log->info(json_encode(print_r($req)));
-
-
-
 });
 
 // Run the Slim application:
 $app->run();
-
 
 ?>
