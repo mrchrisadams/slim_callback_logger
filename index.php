@@ -24,8 +24,11 @@ $app->post('/callback', function() use($app) {
 
   // make a buffer to avoid dumping to the screen:
   ob_start();
-    print_r($app->request());
+
+    // print_r($app->request());
+    print_r($req->post());
     $my_string = ob_get_contents();
+
   // end our buffer so it's in a string for us to use
   ob_end_clean();
 
